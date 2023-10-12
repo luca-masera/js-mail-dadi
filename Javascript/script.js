@@ -5,12 +5,12 @@
 const button = document.querySelector('button');
 
 const lista = [
-    'Giacomo@gmail.com',
-    'Michele@gmail.com',
-    'Fernando@gmail.com',
-    'Luigi@gmail.com',
-    'Andrea@gmail.com',
-    'Fiorello@gmail.com'
+    'giacomo@gmail.com',
+    'michele@gmail.com',
+    'fernando@gmail.com',
+    'luigi@gmail.com',
+    'andrea@gmail.com',
+    'fiorello@gmail.com'
 ];
 
 button.addEventListener('click',function(){
@@ -21,17 +21,19 @@ button.addEventListener('click',function(){
         let currentEmail = lista[i];
         console.log(currentEmail)
         
-        let write;
+        let write
 
-        if(currentEmail === email){
+        if(currentEmail.toLocaleLowerCase() === email.toLocaleLowerCase()){
             write = 'Account verificato, puoi accedere al sito.'
             console.log(write)
             
-        } if(currentEmail !==email){
+        } if(currentEmail.toLocaleLowerCase() !== email.toLocaleLowerCase()){
             write = 'Account non trovato.'
             console.log(write)
         }
 
+        const scritta = document.querySelector('p')
+        scritta.innerText = write;
     }
 
 
