@@ -19,6 +19,7 @@ button.addEventListener('click',function(){
 
     console.log(email)
     
+    
     for(let i = 0; i < lista.length; i++){
         let currentEmail = lista[i];
         console.log(currentEmail)
@@ -27,24 +28,25 @@ button.addEventListener('click',function(){
         
         let write
 
-        if(currentEmail.toLocaleLowerCase() === email.toLocaleLowerCase()){
+        if(currentEmail.toLocaleLowerCase() === email.toLocaleLowerCase()); {
             write = 'Account verificato, puoi accedere al sito.'
-            
+        
             console.log(write)
             break;
-            
+                        
             
         } if(currentEmail.toLocaleLowerCase() !== email.toLocaleLowerCase()){
             write = 'Account non trovato.'
             console.log(write)
             
-        }
-        
-        
+        }      
+                
     }
+        
+    const scritta = document.querySelector('p')
+    scritta.innerText = write;      
 
-        const scritta = document.querySelector('p')
-        scritta.innerText = write;
+       
 
 })
 
