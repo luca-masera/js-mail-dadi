@@ -19,20 +19,18 @@ button.addEventListener('click',function(){
 
     console.log(email)
     
-    
+    let write
     for(let i = 0; i < lista.length; i++){
         let currentEmail = lista[i];
-        console.log(currentEmail)
-
+        console.log(currentEmail) 
         
-        
-        let write
-
-        if(currentEmail.toLocaleLowerCase() === email.toLocaleLowerCase()); {
+    
+        if(currentEmail.toLocaleLowerCase() === email.toLocaleLowerCase()) {
             write = 'Account verificato, puoi accedere al sito.'
         
             console.log(write)
             break;
+            
                         
             
         } if(currentEmail.toLocaleLowerCase() !== email.toLocaleLowerCase()){
@@ -42,9 +40,9 @@ button.addEventListener('click',function(){
         }      
                 
     }
-        
+    
     const scritta = document.querySelector('p')
-    scritta.innerText = write;      
+    scritta.innerText = write;    
 
        
 
