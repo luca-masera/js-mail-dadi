@@ -1,8 +1,8 @@
 
 
+//ESERCIZIO 1 EMAIL:
 
-
-const button = document.querySelector('button');
+/*const button = document.querySelector('button');
 
 const lista = [
     'giacomo@gmail.com',
@@ -46,6 +46,14 @@ button.addEventListener('click',function(){
 
        
 
-})
+})*/
 
+//ESERCIZIO 2 GIOCO DEI DADI:
+
+
+let giocatoreUmano = Math.floor(Math.random() *6) +1;
+console.log(giocatoreUmano)
+
+
+let giocatoreComputer = document.getElementById ('computer')
 
