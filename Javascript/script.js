@@ -51,9 +51,27 @@ button.addEventListener('click',function(){
 //ESERCIZIO 2 GIOCO DEI DADI:
 
 
+
 let giocatoreUmano = Math.floor(Math.random() *6) +1;
 console.log(giocatoreUmano)
 
+let giocatoreComputer = Math.floor(Math.random() *6) +1;
+console.log(giocatoreComputer)
 
-let giocatoreComputer = document.getElementById ('computer')
+let write;
+if(giocatoreUmano > giocatoreComputer){
+    write = 'giocatoreUmano hai vinto';
+    console.log(write);
+    
+}else if(giocatoreUmano < giocatoreComputer){
+    write = 'giocatoreUmano hai perso';
+    console.log(write);
+    
+} else if (giocatoreUmano === giocatoreComputer){
+    write = 'Non ha vinto nessuno, tirate ancora i dadi';
+    console.log(write);
+}
+
+
+
 
