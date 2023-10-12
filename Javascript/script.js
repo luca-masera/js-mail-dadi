@@ -60,17 +60,20 @@ console.log(giocatoreComputer)
 
 let write;
 if(giocatoreUmano > giocatoreComputer){
-    write = 'giocatoreUmano hai vinto';
+    write = 'giocatore 1, umano,  hai vinto';
     console.log(write);
     
 }else if(giocatoreUmano < giocatoreComputer){
-    write = 'giocatoreUmano hai perso';
+    write = 'giocatore 2, computer, hai vinto';
     console.log(write);
     
 } else if (giocatoreUmano === giocatoreComputer){
     write = 'Non ha vinto nessuno, tirate ancora i dadi';
     console.log(write);
 }
+
+let vincitore = document.getElementById ('giocatore');
+vincitore.innerHTML = write;
 
 
 
